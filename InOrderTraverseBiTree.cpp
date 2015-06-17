@@ -1,17 +1,7 @@
-void InOrderTraverseBiTree(BiNode *root)
-{
-  if(root == NULL){
-    return;
-  }
-  stack s;
-  s.push(root);
-  while(!s.empty()){
-    BiNode *p = s.top();
-    while(p->left) {s.push(p->left);p=p->left;}
-    s.pop();
-    visit(p);
-    if(p->right!=NULL){
-      s.push(p->right);
-    }
-  }
+void InOrderTraverseBiTree(BiNode *root){
+     stacjk s; BiNode *p = root;
+     while(p||!s.empty()){
+          if(p){s.push(p);p = p->left;}
+          else{p = s.top(); visit(p); p.pop(); p= p->right;}
+     }
 }
