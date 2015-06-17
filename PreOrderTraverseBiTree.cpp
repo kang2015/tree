@@ -1,0 +1,2 @@
+void PreOrderTraverseBiTree(BiNode *root){
+}
