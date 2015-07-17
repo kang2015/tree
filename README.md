@@ -1,3 +1,3 @@
-# hello-world
-i'm kangYL,thank U!!
-my first repository
+preOrder,
+inOrder, 
+postOrder
