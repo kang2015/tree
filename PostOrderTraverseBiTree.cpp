@@ -7,7 +7,7 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-    
+    //cur+stk+last
     vector<int> trickyPostorderTraversal(TreeNode* root) {
         TreeNode *p = root;
         stack<TreeNode *> s;
